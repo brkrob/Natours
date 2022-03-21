@@ -1,0 +1,15 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Loading page for natours",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/main.css",
+    "watch:sass": "npm run compile:sass -- -w"
+  },
+  "author": "Brooke",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
