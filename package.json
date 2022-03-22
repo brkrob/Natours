@@ -4,7 +4,7 @@
   "description": "Loading page for natours",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/main.css",
+    "compile:sass": "node-sass sass/main.scss css/style.css",
     "watch:sass": "npm run compile:sass -- -w"
   },
   "author": "Brooke",
