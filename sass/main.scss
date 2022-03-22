@@ -68,7 +68,7 @@ body {
     text-transform: uppercase;
     margin-bottom: 6rem;
     backface-visibility: hidden;
-    &-primary--main {
+    &--main {
         display: block;
         font-size: 6rem;
         font-weight: 400;
@@ -81,7 +81,7 @@ body {
         animation-iteration-count: 3;
         */
     }
-    &-primary--sub {
+    &--sub {
         display: block;
         font-size: 2rem;
         font-weight: 700;
