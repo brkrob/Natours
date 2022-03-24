@@ -135,10 +135,6 @@ body {
 }
 
 .btn {
-    &:active {
-        transform: translateY(-.1rem);
-        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
-    }
     &::after {
         content: "";
         display: inline-block;
@@ -169,6 +165,10 @@ body {
             transform: scaleX(1.4) scaleY(1.6);
             opacity: 0;
         }
+    }
+    &:active {
+        transform: translateY(-.1rem);
+        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
     }
     &--animated {
         animation: moveInBottom .5s ease-out .75s;
