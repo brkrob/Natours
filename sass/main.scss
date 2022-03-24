@@ -1,14 +1,20 @@
-@import "abstracts/functions";
-@import "abstracts/mixins";
-@import "abstracts/variables";
+@use "abstracts/colors";
+@use "abstracts/functions";
+@use "abstracts/mixins";
+@use "base/animations";
+@use "base/base";
+@use "base/typography" with (
+  $heading-color: black,
+);
+@use "base/utilities";
 
-@import "base/animations";
-@import "base/base";
-@import "base/typography";
-@import "base/utilities";
+@use "components/button";
 
-@import "components/button";
+@use "layout/header";
 
-@import "layout/header";
+@use "pages/home";
 
-@import "pages/home";
+
+.test {
+  background-color: colors.$white;
+}

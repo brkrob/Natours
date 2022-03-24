@@ -1,3 +1,5 @@
+@use "../abstracts/colors";
+
 .btn {
     &::after {
         content: "";
@@ -24,7 +26,7 @@
     }
     &:hover {
         transform: translateY(-.3rem);
-        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+        box-shadow: 0 .5rem 1rem rgba(colors.$black,.2);
         &::after {
             transform: scaleX(1.4) scaleY(1.6);
             opacity: 0;
@@ -32,17 +34,17 @@
     }
     &:active {
         transform: translateY(-.1rem);
-        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+        box-shadow: 0 .5rem 1rem rgba(colors.$black,.2);
     }
     &--animated {
         animation: moveInBottom .5s ease-out .75s;
         animation-fill-mode: backwards;
     }
     &--white {
-        background-color: $color-white;
-        color: $color-grey-dark;
+        background-color: colors.$white;
+        color: colors.$grey-dark;
         &::after {
-            background-color: $color-white;
+            background-color: colors.$white;
         }
     }
 }
