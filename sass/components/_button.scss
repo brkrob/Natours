@@ -48,6 +48,14 @@
             background-color: colors.$white;
         }
     }
+
+    &--green {
+        background-color: colors.$primary;
+        color: colors.$white;
+        &::after {
+            background-color: colors.$primary;
+        }
+    }
 }
 
 .btn-text {
