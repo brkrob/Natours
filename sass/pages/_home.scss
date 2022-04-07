@@ -41,10 +41,19 @@
 }
 
 .book {
-    background-image: url(../img/nat-10.jpg);
+    background-image: linear-gradient(105deg, 
+                                    rgba(colors.$white, .9) 0%, 
+                                    rgba(colors.$white, .9) 50%, 
+                                    transparent 50%), 
+                        url(../img/nat-10.jpg);
     background-size: 100%;
     border-radius: styling.$br-sm;
     box-shadow: 0 1.5rem 4rem rgba(colors.$black, .5);
 
     height: 50rem;
+
+    &_form {
+        width: 50%;
+        padding: 6rem;
+    }
 }
