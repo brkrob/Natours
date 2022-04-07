@@ -1,12 +1,13 @@
 @use "../abstracts/colors";
 @use "../abstracts/typography";
+@use "../abstracts/styling";
 
 .story {
     width: 75%;
     margin: 0 auto;
     box-shadow: 0 3rem 6rem rgba(colors.$black, .1);
     background-color: rgba(colors.$white, .6);
-    border-radius: 3px;
+    border-radius: styling.$br-sm;
     padding: 6rem;
     padding-left: 9rem;
     font-size: typography.$default-font-size;

@@ -1,11 +1,12 @@
 @use "../abstracts/colors";
+@use "../abstracts/styling";
 
 .feature-box {
     background-color: rgba(colors.$white, .8);
     font-size: 1.5rem;
     padding: 2.5rem;
     text-align: center;
-    border-radius: 3px;
+    border-radius: styling.$br-sm;
     box-shadow: 0 1.5rem 4rem rgba(colors.$black, .15);
     transition: transform .3s;
 

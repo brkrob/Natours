@@ -1,4 +1,5 @@
 @use "../abstracts/colors";
+@use "../abstracts/styling";
 
 .section-about {
     padding: 30rem 0;
@@ -32,4 +33,18 @@
 .section-stories {
     position: relative;
     padding: 15rem 0;
+}
+
+.section-book {
+    padding: 15rem 0;
+    background-image: linear-gradient(to right bottom, colors.$primary-light, colors.$primary-dark);
+}
+
+.book {
+    background-image: url(../img/nat-10.jpg);
+    background-size: 100%;
+    border-radius: styling.$br-sm;
+    box-shadow: 0 1.5rem 4rem rgba(colors.$black, .5);
+
+    height: 50rem;
 }
