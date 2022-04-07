@@ -14,6 +14,7 @@
         z-index: -1;
         transition: all .4s;
     }
+    &,
     &:link,
     &:visited {
         text-transform: uppercase;
@@ -24,6 +25,9 @@
         transition: all .2s;
         position: relative;
         font-size: typography.$default-font-size;
+
+        border: none;
+        cursor: pointer;
     }
     &:hover {
         transform: translateY(-.3rem);
@@ -51,7 +55,8 @@
 
     &--green {
         background-color: colors.$primary;
-        color: colors.$white;
+        color: colors.$white
+        ;
         &::after {
             background-color: colors.$primary;
         }

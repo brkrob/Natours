@@ -1,4 +1,5 @@
 @use "../abstracts/colors";
+@use "../abstracts/typography";
 
 .form {
 
@@ -17,6 +18,7 @@
         border-bottom: 3px solid transparent;
         width: 65%;
         display: block;
+        transition: all .3s;
 
         &:focus {
             outline: none;
@@ -46,5 +48,51 @@
         opacity: 0;
         visibility: hidden;
         transform: translateY(-4rem);
+    }
+
+    &_radio-group {
+        width: 32%;
+        display: inline-block;
+    }
+
+    &_radio-input {
+        display: none;
+    }
+
+    &_radio-label {
+        font-size: typography.$default-font-size;
+        cursor: pointer;
+        position: relative;
+        padding-left: 3.5rem;
+    }
+
+    &_radio-button {
+        height: 2rem;
+        width: 2rem;
+        border:5px solid colors.$primary;
+        border-radius: 50%;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: -.5rem;
+
+        &::after {
+            content: "";
+            display: block;
+            height: 1.3rem;
+            width: 1.3rem;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: colors.$primary;
+            opacity: 0;
+            transition: opacity .2s;
+        }
+    }
+
+    &_radio-input:checked ~ &_radio-label &_radio-button::after {
+        opacity: 1;
     }
 }
