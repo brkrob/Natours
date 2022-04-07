@@ -1,0 +1,20 @@
+@use "../abstracts/colors";
+
+.form {
+
+    &_group {
+
+    }
+
+    &_input {
+        font-size: 1.5rem;
+        padding: 1.5rem 2rem;
+        border-radius: 2px;
+        background-color: rgba(colors.$white, .5);
+        border: none;
+    }
+    
+    &_label {
+
+    }
+}
